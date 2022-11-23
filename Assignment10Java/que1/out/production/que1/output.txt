@@ -1,0 +1,3 @@
+interface java.io.Serializable
+interface java.lang.Comparable
+interface java.lang.CharSequence

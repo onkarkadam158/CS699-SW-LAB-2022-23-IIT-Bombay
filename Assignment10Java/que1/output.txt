@@ -1,0 +1,3 @@
+Comparable<String>
+Serializable
+CharSequence

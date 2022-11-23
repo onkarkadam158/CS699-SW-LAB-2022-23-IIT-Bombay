@@ -1,0 +1,1 @@
+ShortBuffer,SOAPBinding.Style,UUID
