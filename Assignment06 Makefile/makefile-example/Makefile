@@ -1,0 +1,18 @@
+all: udp-test
+
+OBJ = udp-test.o sockutil.o timeutil.o
+
+udp-test: $(OBJ)
+	cc -o udp-test $(OBJ) -lm
+
+udp-test.o: udp-test.c sockutil.h timeutil.h sync.h
+
+sockutil.o: sockutil.c sockutil.h timeutil.h
+
+timeutil.o: timeutil.c timeutil.h
+
+.PHONY: clean
+
+clean:
+	-rm -f *.o udp-test
+

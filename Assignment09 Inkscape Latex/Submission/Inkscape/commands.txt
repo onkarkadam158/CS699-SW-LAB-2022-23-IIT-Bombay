@@ -1,0 +1,9 @@
+
+//Command to convert esense-scenarios.svg to  esense-scenarios.pdf 
+
+inkscape esense-scenarios.svg --export-pdf=esense-scenarios.pdf
+
+
+// Command to convert lo3-ex.svg lo3-ex.pdf
+
+inkscape lo3-ex.svg --export-pdf=lo3-ex.pdf

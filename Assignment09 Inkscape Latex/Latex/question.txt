@@ -1,0 +1,78 @@
+Write latex commands with relevant text in given files as follows. (Expected structure of output is similar to as shown in 'assignment.pdf' file)
+
+main.tex:
+  This is the main tex file. It has to include other tex file related chapter and should also command to load bibliography.
+  - Must use following commands:
+    - title
+    - author
+    - date
+    - include (for each chapter and abstract)
+    - bibliography
+  - Change following variables:
+    - topmargin
+    - oddsidemargin
+    - evensidemargin
+    - textheight
+    - textwidth
+    - parindent
+    - columnsep
+
+abstract.tex:
+  Use 'abstract' environment and write any paragraph you want inside it. This should occur before beginning of chapters.
+
+references.bib:
+  This is a bibliography database file. Put 6 (3 urls + 3 papers) in bibtex format. These entries should be used for citation in chapter 5.
+
+ch1_table.tex:
+  This shall contain two sections.
+  - Section 1.1
+    - Add a table with 4 columns and 4 rows.
+  - Section 1.2
+    - Add any text of your choice with a cross reference to the previous table.
+  - Must use following commands:
+    - chapter
+    - section
+    - ref
+    - label
+
+ch2_equation.tex:
+  It contains four sections.
+  - Section 2.1
+    - (use latex commands to generate equation exactly as shown in 'assignment.pdf' file, sec 2.1)
+  - Section 2.2
+    - (use latex commands to generate equation exactly as shown in 'assignment.pdf' file, sec 2.2)
+  - Section 2.3
+    - (use latex commands to generate equation exactly as shown in 'assignment.pdf' file, sec 2.3)
+  - Section 2.4
+    - Add some text with cross reference to each equation from previous section and cross reference to previous chapter.
+  - Must use following environment
+    - equation
+
+ch3_list.tex:
+  It has three sections.
+  - Section 3.1
+    - Add a list with bullet points with atleast 3 entries.
+  - Section 3.2
+    - Add a enumerated list with atleast 3 entries.
+  - Section 3.3
+    - Add any text with cross reference to previous two sections.
+  - Must use following environment:
+    - itemize
+    - enumerate
+
+ch4_twocol.tex:
+  This chapter must be written in two column format. Add 4 sections with each having short paragraphs.
+
+ch5_othercmds.tex:
+  This chapter should be written in regular one column format. It contains two sections.
+  - Section 5.1
+    - Add a small paragraph and then enforce a new page for any content after it. Add citation to 3 papers mentioned in bib file.
+    - Add a footnote with any custom text.
+  - Section 5.2
+    - This should contain two paragraphs. Put extra vertical space between these two paragraphs. Add citation to 3 urls mentioned in bib file.
+  - Must use following commands:
+    - footnote
+    - vspace
+    - newpage
+
+Produce a pdf document from these latex files, using pdflatex, or using latex, dvips, and ps2pdf. Save it as output.pdf

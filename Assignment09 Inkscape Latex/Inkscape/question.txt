@@ -1,0 +1,14 @@
+Inkscape Exercise
+
+Draw the following diagrams using inkscape. You should also use the command-line to convert your diagram to PDF (only the drawing area). Your diagram should look visually similar to the given diagrams. For diagrams involving embedded images, use the different embedded images provided.
+	a. esense-scenarios
+	b. lo3-ex
+
+In "commands.txt" mention the commands for command-line conversion of SVG to PDF of the above drawings.
+
+Note: Submission should contain the following four files
+1. esense-scenarios.svg
+2. esense-scenarios.pdf
+3. lo3-ex.svg
+4. lo3-ex.pdf
+4. commands.txt

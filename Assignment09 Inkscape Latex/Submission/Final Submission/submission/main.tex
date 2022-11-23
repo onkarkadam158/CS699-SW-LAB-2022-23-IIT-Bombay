@@ -1,0 +1,45 @@
+\documentclass[a4paper, 11pt]{report}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{blindtext}
+\usepackage{multicol}
+
+\title{CS 699 Latex Lab Assignment}
+\author{Omkar Rajabhau Kadam}
+\date{ 20 October 2022}
+
+\usepackage{indentfirst}
+\parindent=40pt
+
+\setlength{\columnsep}{1cm}
+\addtolength{\topmargin}{0.0in}
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textheight}{0in}
+\addtolength{\textwidth}{0in}
+\setlength{\parindent}{20pt}
+\setlength\columnsep{15pt}
+
+\begin{document}
+
+\maketitle
+
+\include{abstract}
+
+\include{ch1_table}
+
+\include{ch2_equation}
+
+\include{ch3_list}
+
+\include{ch4_twocol}
+
+\include{ch5_othercmds}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references.bib}
+
+\end{document}
