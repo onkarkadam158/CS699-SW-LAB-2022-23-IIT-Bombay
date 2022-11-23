@@ -1,0 +1,9 @@
+Script started on Tuesday 16 September 2014 01:00:03 PM IST
+]0;br@palantir: ~/teaching/cs699-autumn2014/lex-yaccbr@palantir:~/teaching/cs699-autumn2014/lex-yacc$ ./bin-expr 
+NOT0;
+Expr value is 1
+0 AND (0 OR 1);
+Expr value is 0
+]0;br@palantir: ~/teaching/cs699-autumn2014/lex-yaccbr@palantir:~/teaching/cs699-autumn2014/lex-yacc$ exit
+
+Script done on Tuesday 16 September 2014 01:00:33 PM IST
