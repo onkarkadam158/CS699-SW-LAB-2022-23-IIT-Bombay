@@ -1,0 +1,16 @@
+makefile-slides.pdf: makefile-slides.tex fig/br.pdf\
+fig/linking.pdf fig/linking-library.pdf fig/dependence-dag.pdf
+	pdflatex makefile-slides.tex
+
+fig/br.pdf: fig/br.svg
+	inkscape -D -A fig/br.pdf fig/br.svg
+
+fig/linking.pdf: fig/linking.svg
+	inkscape -D -A fig/linking.pdf fig/linking.svg
+
+fig/linking-library.pdf: fig/linking-library.svg
+	inkscape -D -A fig/linking-library.pdf fig/linking-library.svg
+
+fig/dependence-dag.pdf: fig/dependence-dag.svg
+	inkscape -D -A fig/dependence-dag.pdf fig/dependence-dag.svg
+

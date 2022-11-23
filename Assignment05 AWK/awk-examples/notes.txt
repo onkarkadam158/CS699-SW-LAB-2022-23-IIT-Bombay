@@ -1,0 +1,25 @@
+Selecting specific fields, the print command
+awk '{print $1}' tutorial-groups.tsv
+awk '{print $1, $2}' tutorial-groups.tsv
+awk -F, '{print $1, $2}' tutorial-groups.csv
+
+Selecting lines based on pattern match, numeric condition
+awk -F, '/Mariana/ {print $2, $3}' tutorial-groups.csv
+awk -F, '($1 > 120050005) {print $0}' tutorial-groups.csv
+
+Use of variables, simple arithmetic
+awk -F, '/Mariana/ { num++; print num }' tutorial-groups.csv
+awk -F, '/Mariana/ { num++; } END {print num}' tutorial-groups.csv
+awk 'BEGIN {FS=","} /Mariana/ { num++; } END {print num}' tutorial-groups.csv
+
+If-then-else
+awk -F, '{if($3 ~ /Mariana/) {M++} else if($3 ~ /Nile/) {N++} else {B++}} END {print B, N, M}' < tutorial-groups.csv
+
+Associate arrays
+awk -F, '{Grp[$3]++} END {for(g in Grp) print g, Grp[g]}' < tutorial-groups.csv
+
+Numeric for loop
+awk -F, '{ for(i=1; i<=NF; i++) { printf("%d:%s\t",i,$i); } printf("\n");}' < tutorial-groups.csv
+
+awk script
+example.awk

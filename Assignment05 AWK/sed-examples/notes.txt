@@ -1,0 +1,40 @@
+Substitution:
+sed 's/Mariana/Cumulonimbus/' tutorial-groups.csv
+sed 's/light bulb/tube light/' f6.txt
+
+Global substitution:
+sed 's/,/\t/' tutorial-groups.csv
+sed 's/,/\t/g' tutorial-groups.csv
+
+Substituting a regular expression:
+sed 's/[0-9]*//' tutorial-groups.csv
+sed 's/exis.*s/engineers/' f6.txt
+sed 's/exis[^ ]*s/engineers/' f6.txt
+
+Selective substitutions:
+sed '1,3 s/,/\t/g' tutorial-groups.csv
+sed '5,$ s/,/\t/g' tutorial-groups.csv
+sed '/^A:/ s/light bulb/tubelight/' f6.txt
+
+The delete command:
+sed '/bulb/d' f6.txt
+sed '/^12005/d' tutorial-groups.csv
+
+The print command:
+sed '/bulb/p' f6.txt
+sed -n '/bulb/p' f6.txt
+
+append, insert:
+sed '/bulb/a some line of text' f6.txt
+sed '/bulb/i some line of text' f6.txt
+
+The quit command:
+sed '/^A:/q' f6.txt
+sed '5q' tutorial-groups.csv
+
+Using multiple sed commands:
+sed 's/light/tube/g; s/bulb/light/g' f6.txt
+sed 's/bulb/light/g; s/light/tube/g' f6.txt
+sed 's/light/tube/g; s/bulb/light/g; /^A:/d' f6.txt
+
+Using sed within a script
